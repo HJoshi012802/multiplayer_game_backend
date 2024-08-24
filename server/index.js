@@ -4,8 +4,11 @@ const app = express();
 const http =require('http');
 const {Server} =require('socket.io');
 
-const cors = require('cors');
-app.use(cors());
+const cors = require('cors'); 
+app.use(cors({
+  origin: "*",
+  credentials: true,
+}));
 app.get('/',(req,res)=>{
     res.send("Hello Chat");
 })

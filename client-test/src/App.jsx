@@ -2,7 +2,7 @@ import {useEffect,useState} from "react";
 import './App.css'
 import io from "socket.io-client";
 
-const socket =io.connect("http://192.168.0.159:6069");
+const socket =io.connect("http://192.168.0.160:6069");
 
 function App() {
   const [recivedmessage,setRecivedMessage]=useState([]);
